@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treasure Hunt - Adventure Begins</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='js/game.js') }}"></script>
+</head>
+<body>
+
+  <!-- Floating Stars -->
+  <div id="stars"></div>
+
+  <div class="container">
+    <!-- Animated Treasure Box -->
+    <div class="treasure-box game-box">
+      <div class="chest-lid"></div>
+      <div class="chest-body">
+        <div class="game-info hidden" id="gameInfo">
+          <h2>Welcome, <span id="playerName">{{ name }}</span>! 🗝️</h2>
+          <p>Age: <span id="playerAge">{{ age }}</span></p>
+          <p>🌟 Your treasure hunt begins now!</p>
+          <button id="startRound">Start Round 1 🚀</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Treasure Hunt Adventure | Let the quest begin!</footer>
+</body>
+</html>
