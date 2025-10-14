@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treasure Hunt - Start Adventure</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+<body>
+
+  <!-- Floating Stars Background -->
+  <div id="stars"></div>
+
+  <div class="container">
+    <!-- Treasure Chest with Start Details -->
+    <div class="treasure-box start-box">
+      <div class="chest-lid"></div>
+      <div class="chest-body">
+        <div class="start-info hidden" id="startInfo">
+          <h1>🏴‍☠️ Welcome to the Treasure Hunt 🏴‍☠️</h1>
+          <p>Embark on an unforgettable journey through mystery and adventure!</p>
+          
+          <!-- Input Fields -->
+          <div class="input-box">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="number" id="age" placeholder="Enter your age" required>
+          </div>
+
+          <!-- Bonus Info -->
+          <p class="bonus-text">🎁 You have got <span id="bonusKeys">10</span> bonus keys!</p>
+
+          <!-- Start Button -->
+          <button id="startAdventure">Start Adventure 🚀</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Treasure Hunt Adventure | Begin your quest!</footer>
+
+</body>
+</html>
