@@ -1,32 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const startInfo = document.getElementById("startInfo");
-  const startButton = document.getElementById("startAdventure");
-  const starsContainer = document.getElementById("stars");
+  const startBtn = document.getElementById("startBtn");
+  const chest = document.getElementById("chest");
 
-  // Fade in the start box
-  setTimeout(() => startInfo.classList.remove("hidden"), 400);
+  startBtn.addEventListener("click", (ev) => {
+    ev.preventDefault();
+    const nameInput = document.getElementById("name");
+    const ageInput = document.getElementById("age");
 
-  // Create floating stars
-  for (let i = 0; i < 80; i++) {
-    const star = document.createElement("div");
-    star.classList.add("star");
-    const size = Math.random() * 3 + 1;
-    star.style.width = `${size}px`;
-    star.style.height = `${size}px`;
-    star.style.left = `${Math.random() * 100}vw`;
-    star.style.animationDuration = `${Math.random() * 5 + 5}s`;
-    star.style.animationDelay = `${Math.random() * 5}s`;
-    starsContainer.appendChild(star);
-  }
+    const name = nameInput.value.trim();
+    const age = ageInput.value.trim();
 
-  startButton.addEventListener("click", () => {
-    const name = document.getElementById("name").value.trim();
-    const age = document.getElementById("age").value.trim();
-    if (!name || !age) {
-      alert("Enter your name and age first!");
+    if (!name || !age || parseInt(age) < 5) {
+      alert("Please enter a valid name and age (5+).");
       return;
     }
-    alert(`🎉 Congrats ${name}! You got 10 bonus keys! 🗝️`);
-    window.location.href = `/game?name=${encodeURIComponent(name)}&age=${encodeURIComponent(age)}`;
+
+    // Disable inputs/button
+    nameInput.disabled = true;
+    ageInput.disabled = true;
+    startBtn.disabled = true;
+
+    // Simulate chest opening and redirect
+    chest.classList.add('open');
+
+    // After a short animation delay, redirect to /game
+    setTimeout(() => {
+      const url = `/game?name=${encodeURIComponent(name)}&age=${encodeURIComponent(age)}`;
+      window.location.href = url;
+    }, 1000); 
   });
 });
