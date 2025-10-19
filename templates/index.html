@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Treasure Hunt - Start Adventure</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <script defer src="{{ url_for('static', filename='js/index.js') }}"></script>
 </head>
-<body>
+<body class="page-wrap-body">
+  <div id="stars" aria-hidden="true"></div>
 
-  <!-- Floating Stars Background -->
-  <div id="stars"></div>
+  <div class="page-wrap">
+    <div class="treasure-wrapper">
+      <div class="treasure-box" id="chest">
+        <div class="chest-lid" id="chestLid"></div>
+        <div class="chest-body">
+          <div class="form-area" id="formArea">
+            <h1 class="site-title">🏴‍☠️ Treasure Hunt Adventure</h1>
+            <p class="subtitle">Enter your details and start your quest!</p>
 
-  <div class="container">
-    <!-- Treasure Chest with Start Details -->
-    <div class="treasure-box start-box">
-      <div class="chest-lid"></div>
-      <div class="chest-body">
-        <div class="start-info hidden" id="startInfo">
-          <h1>🏴‍☠️ Welcome to the Treasure Hunt 🏴‍☠️</h1>
-          <p>Embark on an unforgettable journey through mystery and adventure!</p>
-          
-          <!-- Input Fields -->
-          <div class="input-box">
-            <input type="text" id="name" placeholder="Enter your name" required>
-            <input type="number" id="age" placeholder="Enter your age" required>
+            <input id="name" type="text" placeholder="Your name" autocomplete="off" required>
+            <input id="age" type="number" placeholder="Your age (5+)" min="5" max="120" required>
+
+            <button id="startBtn">Start Adventure 🚀</button>
           </div>
-
-          <!-- Bonus Info -->
-          <p class="bonus-text">🎁 You have got <span id="bonusKeys">10</span> bonus keys!</p>
-
-          <!-- Start Button -->
-          <button id="startAdventure">Start Adventure 🚀</button>
+          <div id="infoBox" class="info-box hidden">
+            <p>Hello <span id="displayName"></span>!</p>
+            <p>Age: <span id="displayAge"></span></p>
+            <p class="bonus-line">Starting your quest! Good luck! 🗝️</p>
+          </div>
         </div>
       </div>
+      <div id="keysContainer" class="keys-container" aria-hidden="true"></div>
     </div>
   </div>
-
-  <footer>© 2025 Treasure Hunt Adventure | Begin your quest!</footer>
-
+  <footer class="page-footer">© 2025 TreasureQuest</footer>
 </body>
 </html>
