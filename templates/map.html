@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Map - The Quest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="map-page-body">
+    <div class="map-container">
+        <h1 class="map-title">🗺️ The Grand Treasure Quest, {{ name }}!</h1>
+        <p class="keys-counter">
+            Keys Collected: <span id="currentKeys">{{ keys }}</span> / 100 🔑
+        </p>
+
+        <div class="progress-map">
+            <div class="map-line">
+                <div class="map-line-fill" style="width: {{ [keys, 100]|min }}%;"></div>
+            </div>
+
+            <div class="map-point active" style="left: 0%;"><span class="map-point-label">Start</span></div>
+            <div class="map-point {% if keys >= 25 %}active{% endif %}" style="left: 25%;">{% if keys >= 25 %}L2{% else %}?{% endif %}<span class="map-point-label">Clue 2</span></div>
+            <div class="map-point {% if keys >= 50 %}active{% endif %}" style="left: 50%;">{% if keys >= 50 %}L3{% else %}?{% endif %}<span class="map-point-label">Clue 3</span></div>
+            <div class="map-point {% if keys >= 75 %}active{% endif %}" style="left: 75%;">{% if keys >= 75 %}L4{% else %}?{% endif %}<span class="map-point-label">Clue 4</span></div>
+            <div class="map-point chest {% if keys >= 100 %}active{% endif %}" style="left: 100%;">{% if keys >= 100 %}🏆{% else %}🔒{% endif %}<span class="map-point-label">Treasure!</span></div>
+        </div>
+        
+        <div class="action-area">
+            {% if win %}
+                <p class="win-message">CONGRATULATIONS! YOU UNLOCKED THE TREASURE! 💰</p>
+                <a href="{{ url_for('home') }}"><button style="background: #e6b800;">Start New Adventure</button></a>
+            {% else %}
+                <p>You need **{{ 100 - keys }}** more keys to reach the treasure!</p>
+                <a href="{{ url_for('game') }}"><button id="continueBtn">Get Next Clue (Play Round) 🗝️</button></a>
+            {% endif %}
+        </div>
+    </div>
+    <footer class="page-footer">© 2025 TreasureQuest</footer>
+</body>
+</html>
