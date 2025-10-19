@@ -1,0 +1,51 @@
+age_group,question_type,question_text,correct_answer,options,difficulty
+kids,Riddle,I have keys but no locks. I have space but no room. You can enter but can't go outside. What am I?,Keyboard,Keyboard;Door;Car;House,Easy
+kids,Math,What is 7 + 5?,12,10;11;12;13,Easy
+kids,General Knowledge,Which color do you get by mixing red and yellow?,Orange,Green;Purple;Orange;Brown,Easy
+kids,Logical,"If you have three apples and you take away two, how many do you have?",2,1;2;3;4,Easy
+kids,Riddle,What has hands but can’t clap?,Clock,Clock;Robot;Tree;Chair,Easy
+kids,Math,What is 10 - 4?,6,6;5;4;7,Easy
+kids,Riddle,I am tall when young and short when old. What am I?,Candle,Candle;Tree;Pencil;Shadow,Easy
+kids,General Knowledge,Which animal is known as the King of Jungle?,Lion,Tiger;Elephant;Lion;Cheetah,Easy
+kids,Logical,"If a train leaves at 9 AM and another at 10 AM, when do they meet?",11:00 AM,10 AM;11 AM;12 PM;1 PM,Hard
+kids,Riddle,"What has a head, a tail, but no body?",Coin,Coin;Snake;Comet;Arrow,Easy
+teens,Riddle,"The more you take, the more you leave behind. What am I?",Footsteps,Footsteps;Time;Shadow;Memory,Medium
+teens,Math,Solve for x: 2x + 3 = 11,4,3;4;5;6,Medium
+teens,Logical,"If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies?",Yes,Yes;No;Cannot be determined;Maybe,Medium
+teens,General Knowledge,Who wrote 'Romeo and Juliet'?,William Shakespeare,J.K. Rowling;William Shakespeare;Mark Twain;Charles Dickens,Medium
+teens,Riddle,I speak without a mouth and hear without ears. What am I?,Echo,Echo;Shadow;Wind;Mirror,Medium
+teens,Math,Solve: 5*5,25,20;25;30;35,Easy
+teens,Logical,"If today is Monday, what day will it be 100 days from now?",Wednesday,Tuesday;Wednesday;Thursday;Friday,Medium
+teens,General Knowledge,What is the capital of France?,Paris,Berlin;Madrid;Paris;Rome,Easy
+teens,Riddle,"What comes once in a minute, twice in a moment, but never in a thousand years?",The letter M,The letter M;Time;Event;Sun,Medium
+teens,Math,Solve: 12/4 + 3,6,5;6;7;8,Easy
+adults,Riddle,"I come once in a minute, twice in a moment, but never in a thousand years. What am I?",The letter M,The letter M;Time;Event;Sun,Medium
+adults,Logical,"If 5x = 20, what is x?",4,2;3;4;5,Easy
+adults,Math,A clock shows 3:15. What is the angle between hour and minute hands?,7.5 degrees,5 degrees;7.5 degrees;10 degrees;15 degrees,Hard
+adults,General Knowledge,Who painted the Mona Lisa?,Leonardo da Vinci,Vincent Van Gogh;Leonardo da Vinci;Pablo Picasso;Michelangelo,Medium
+adults,Riddle,What can travel around the world while staying in a corner?,Stamp,Stamp;Sun;Wind;Shadow,Easy
+adults,Math,Which element has the chemical symbol 'O'?,Oxygen,Oxygen;Gold;Iron;Hydrogen,Easy
+adults,Logical,Which planet is known as the Red Planet?,Mars,Earth;Mars;Jupiter;Venus,Medium
+adults,General Knowledge,Which ocean is the largest?,Pacific Ocean,Atlantic;Indian;Pacific;Arctic,Easy
+adults,Riddle,I have a neck but no head. What am I?,Bottle,Bottle;Shirt;Giraffe;Tree,Easy
+adults,Math,What is the square root of 144?,12,10;11;12;13,Easy
+adults,Logical,Which country gifted the Statue of Liberty to USA?,France,France;UK;Germany;Italy,Easy
+adults,General Knowledge,What has to be broken before you can use it?,Egg,Egg;Glass;Stick;Stone,Easy
+adults,Riddle,Which weighs more: 1 ton of iron or 1 ton of cotton?,They weigh the same,Feathers;Bricks;Both weigh the same;Depends on volume,Easy
+adults,Math,What is 15% of 200?,30,25;30;35;40,Medium
+adults,Logical,I am not alive but I can grow. What am I?,Fire,Fire;Plant;Rock;Cloud,Easy
+seniors,General Knowledge,What is 7 squared?,49,42;45;49;56,Easy
+seniors,Riddle,Which gas do humans breathe in to survive?,Oxygen,Oxygen;Carbon Dioxide;Nitrogen;Hydrogen,Medium
+seniors,Math,In which country is the Great Wall located?,China,China;India;Japan;Egypt,Easy
+seniors,Logical,"A man is looking at a picture. His friend asks who it is. The man replies, 'Brothers and sisters, I have none. But that man's father is my father's son.' Who is in the picture?",His son,His son;His father;His uncle;His nephew,Easy
+seniors,General Knowledge,What is full of holes but still holds water?,Sponge,Sponge;Basket;Cup;Bottle,Easy
+seniors,Riddle,10 + 6 - 3 = ?,13,12;13;14;15,Medium
+seniors,Math,I am always hungry and will die if not fed. What am I?,Fire,Fire;Water;Shadow;Wind,Easy
+seniors,Logical,What is 9 * 9?,81,72;81;90;99,Easy
+seniors,General Knowledge,A farmer has 17 sheep and all but 9 die. How many are left?,9,8;9;10;7,Easy
+seniors,Riddle,Which day comes after Friday?,Saturday,Friday;Saturday;Sunday;Monday,Easy
+seniors,Math,Who discovered gravity?,Isaac Newton,Albert Einstein;Isaac Newton;Galileo;Tesla,Medium
+seniors,Logical,"I have cities but no houses, forests but no trees, and water but no fish. What am I?",Map,Map;Globe;Painting;Puzzle,Easy
+seniors,General Knowledge,What has an eye but cannot see?,Needle,Needle;Eye;Storm;Pot,Medium
+seniors,Riddle,"If you rearrange the letters 'CIFAIPC', you get the name of a/an?",Pacific,Pacific;Atlantic;Indian;Arctic,Medium
+seniors,Math,Which color do you get by mixing red and blue?,Purple,Red;Blue;Green;Purple,Easy
